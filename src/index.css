@@ -24,6 +24,8 @@ body{
 .AppToggle {
   position: fixed;
   right: 1.3rem;
+  width: fit-content;
+  height: fit-content;
   top: 2rem;
 }
 .title {
