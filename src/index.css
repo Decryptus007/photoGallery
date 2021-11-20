@@ -1,32 +1,51 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Lobster&display=swap');
 
 :root{
-  --primary: #efb6b2;
+  --primary: #ec6258;
   --secondary: #4e4e4e;
   --error: #ff4a4a;
 }
 
 /* base styles & title */
 body{
-  font-family: "Noto Serif";
+  font-family: 'Lobster', cursive;
   color: var(--secondary);
+  height: 100%;
+  padding: 0;
+  margin: 0;
+
 }
 .App{
-  max-width: 960px;
+  height: auto;
   margin: 0 auto;
+  padding: 1rem;
+  transition: 1s;
+}
+.AppToggle {
+  position: fixed;
+  right: 1.3rem;
+  top: 2rem;
+}
+.title {
+  background-image: linear-gradient(to bottom, #00000063, #00000063), url('./images/bg.png');
+  background-size: cover;
+  padding: 0.5rem;
 }
 .title h1{
-  color: var(--primary);
-  font-size: 1.2rem;
+  color: #f8516d;
+  text-shadow:1px 1px rgba(0, 0, 0, 0.658);
+  font-size: 1rem;
+  margin-top: 0;
+  padding-top: 20px;
   letter-spacing: 2px;
   font-weight: normal;
 }
 .title h2, .title p{
   text-align: center;
+  font-family: 'Abel', sans-serif;
 }
 .title h2{
   margin-top: 60px;
-  font-size: 2.6rem;
 }
 
 /* upload form styles */
@@ -110,4 +129,21 @@ label:hover{
   margin: 60px auto;
   box-shadow: 3px 5px 7px rgba(0,0,0,0.5);
   border: 3px solid white;
+}
+
+/* Media screens */
+@media (max-width: 575px) {
+  .img-grid{
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5px;
+  }
+
+  .img-wrap{
+    overflow: hidden;
+    height: auto;
+    position: relative;
+    opacity: 1;
+  }
 }
