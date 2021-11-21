@@ -95,7 +95,7 @@ label:hover{
 .img-grid{
   margin: 20px auto;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 40px;
 }
 .img-wrap{
@@ -109,7 +109,7 @@ label:hover{
 .img-wrap img{
   min-width: 100%;
   min-height: 100%;
-  max-width: 150%;
+  max-width: 100%;
   position: absolute;
   top: 0;
   left: 0;
