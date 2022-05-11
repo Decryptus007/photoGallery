@@ -108,6 +108,7 @@ label:hover{
 }
 .img-wrap img{
   min-width: 100%;
+  object-fit: cover;
   min-height: 100%;
   max-width: 100%;
   position: absolute;
